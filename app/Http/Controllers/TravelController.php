@@ -8,6 +8,8 @@ use App\Travel;
 class TravelController extends Controller
 {
    public function index(){
-    return view('home.index');
+       $data= Travel::all();
+       
+    return view('home.index', compact('data'));
    }
 }

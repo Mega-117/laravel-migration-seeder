@@ -17,13 +17,9 @@ class CreateTravelsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('destinazione');
-            $table->string('descrizione');
-            $table->string('durata');
-            $table->date('data-inizio');
-            $table->date('data-fine');
             $table->string('prezzo');
-            $table->string('numero-persone');
-            $table->string('alloggio');
+            
+            $table->timestamps();
         });
     }
 

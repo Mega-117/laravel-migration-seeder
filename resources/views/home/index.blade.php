@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>home</h1>
+    @dump($data)
 </body>
 </html>
